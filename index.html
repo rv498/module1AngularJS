@@ -9,6 +9,15 @@
 </head>
 
 <body>
-	<input type="text" />
+	<div>
+		<input type="text" ng-model="content1" /> <br> <br>
+		<button ng-click="clickedFunc();">Check If Too Much</button>
+	</div>
+	
+	<div>
+		{{ QuantityScale }}
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="app.js"></script>
 </body>
 </html>
