@@ -2,11 +2,14 @@
 	
 	'use strict';
 	
-	angular.module('app1', [])
-	.controller('controller1', function($scope) {
+	angular.module('LunchCheck', [])
+	.controller('LunchCheckController', LunchCheckController);  
 		
- 
-		
+    LunchCheckController.$inject = ["$scope"];
+	
+ 	function LunchCheckController ($scope) {
+		$scope.content1 = "";
+		$scope.QuantityScale = "";
 		$scope.clickedFunc = function () {
 			
 			var splitedContent = $scope.content1.split(",");
@@ -20,8 +23,11 @@
 			}   
 		};
 		
-	});
-	
+	}
+		
+		
+		
+	 
 	
 	
 	
